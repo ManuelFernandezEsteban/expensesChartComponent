@@ -1,0 +1,14 @@
+
+<div class="flex wrapper-bar">
+    <div class="box-amount" [ngClass]="mostrarAmount()">
+        <span class="text-white fw-bold"> ${{gasto.amount}}</span>
+    </div>
+    <div id="bar{{indice}}" 
+         class="bar" 
+         [ngClass]="mostrarActive()" 
+         [ngClass]="diaSemana()"
+         (click)="mostrar()">
+
+    </div>
+    <span class="text-accent-light">{{gasto.day}}</span>
+</div>

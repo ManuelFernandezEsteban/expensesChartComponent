@@ -1,0 +1,10 @@
+
+
+<div class="flex wrapper-bars">
+    <ng-container *ngFor="let gasto of gastos; let indice=index">
+
+        <app-bar-component [gasto]="gasto" [indice]="indice"></app-bar-component>
+
+    </ng-container>
+
+</div>
